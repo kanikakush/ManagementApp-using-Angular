@@ -1,0 +1,19 @@
+.formblock{
+  background-color: #92aad4;
+padding-top: 50px;
+width: 60%;
+}
+
+.c h2{
+  padding-top: 30px;
+}
+
+.bdy{
+  height: 630px;
+  background-color: #bfd3f5;
+}
+label{
+  font-size: 19px;
+  font-weight: 20px;
+}
+

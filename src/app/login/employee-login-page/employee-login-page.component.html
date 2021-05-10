@@ -1,0 +1,32 @@
+
+<body class="bdy">
+<div class="row">
+  <div class="col-5">
+<img [src]=login alt="img" class="lg">
+  </div>
+  <div class="col-7 c">
+      <h2 class="d-flex justify-content-center">Employee Login!</h2>
+      <form >
+      <div class="container formblock">
+
+        <div class="form-group">
+          <label class="label">Employee ID</label>
+          <input type="number" class="form-control" name="id" [(ngModel)]="id" >
+        </div><br>
+        <div class="form-group">
+          <label class="label">Email</label>
+          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+        </div><br>
+        <div class="form-group">
+          <label class="label">Password</label>
+          <input type="password" class="form-control" name="pass" [(ngModel)]="pass">
+        </div>
+      <br>
+        <div class="d-flex justify-content-center"><Button type="submit" class="btn btn-primary" (click)="emplogin()">Login</Button></div><br>
+      </div>
+    </form>
+      </div>
+  </div>
+
+</body>
+

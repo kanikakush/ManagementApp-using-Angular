@@ -1,0 +1,26 @@
+body{
+  background-color: #c6d1e4;
+}
+
+.log{
+  position: relative;
+  left: 8pc;
+  top:9pc;
+  width: 7rem;
+  background-color: #5d759c;
+  color: white;
+}
+.log1{
+  position: relative;
+  left: 8pc;
+  top:15pc;
+  width: 7rem;
+  background-color: #5d759c;
+  color: white;
+}
+.im img{
+  padding-top: 60px;
+  height: 500px;
+
+}
+

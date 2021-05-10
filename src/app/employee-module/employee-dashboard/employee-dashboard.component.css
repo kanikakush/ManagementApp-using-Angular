@@ -1,0 +1,9 @@
+.bdy{
+  height: 640px;
+  background-color: #c8d3e6;
+}
+h1{
+  padding-top: 1.5rem;
+  padding-left: 7rem;
+  padding-bottom: 1rem;
+}

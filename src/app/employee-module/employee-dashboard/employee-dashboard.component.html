@@ -1,0 +1,41 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="bdy">
+  <h1>Wecome employee</h1>
+  <div class="container">
+    <div class="form-group">
+      <label>Employee ID</label>
+      <input type="number" class="form-control" [(ngModel)]="idm" >
+    </div>{{idm}}
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" [(ngModel)]="namem" >
+    </div>
+    <div class="form-group">
+      <label>Department</label>
+      <input type="text" class="form-control" [(ngModel)]="depm" >
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" [(ngModel)]="emailm">
+    </div>
+    <div class="form-group">
+      <label class="label">Password</label>
+      <input type="text" class="form-control" name="pass" [(ngModel)]="passm">
+    </div>
+    <br>
+    <div class="form-group">
+      <button  class="btn btn-primary" (click)="edit(namem,idm,emailm,passm,depm)">edit</button>&nbsp;&nbsp;
+      <button  class="btn btn-primary" (click)="Update(idm)">Update</button>
+
+    </div>
+    </div><br><br>
+</body>
+</html>

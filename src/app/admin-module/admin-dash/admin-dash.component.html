@@ -1,0 +1,57 @@
+<body class="bdy">
+<br><h1>Employee Details</h1>
+<br>
+ <div class="container">
+<div class="form-group">
+  <label class="label">Employee ID</label>
+  <input type="number" class="form-control" [(ngModel)]="idm">
+</div>{{idm}}
+<div class="form-group">
+  <label class="label">Name</label>
+  <input type="text" class="form-control" [(ngModel)]="namem">
+</div>
+<div class="form-group">
+  <label class="label">Department</label>
+  <input type="text" class="form-control" [(ngModel)]="depm">
+</div>
+<div class="form-group">
+  <label class="label">Email</label>
+  <input type="email" class="form-control" [(ngModel)]="emailm">
+</div>
+<div class="form-group">
+  <label class="label">Password</label>
+  <input type="text" class="form-control" name="pass" [(ngModel)]="passm">
+</div><br>
+<div class="form-group">
+  <button *ngIf="!visible" class="btn btn-primary" (click)="addemp(namem,idm,emailm,passm,depm)">Add</button>
+  <button *ngIf="visible" class="btn btn-outline-primary" (click)="Update(idm)">update</button>
+</div>
+</div><br><br>
+<div class="text-center t" >
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>S No.</th>
+    <th>Employee ID</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+<tbody>
+  <tr (click)="edit(k)" *ngFor="let k of d,let j=index">
+    <td>{{j+1}}</td>
+    <td>{{k.idd1}}</td>
+    <td>{{k.named}}</td>
+    <td>{{k.depd}}</td>
+    <td>{{k.emaild}}</td>
+    <td>{{k.passd}}</td>
+    <td><button class="btn btn-danger" (click)="delete(k)">Delete</button>&nbsp;</td>
+  </tr>
+</tbody>
+
+</table>
+</div>
+</body>

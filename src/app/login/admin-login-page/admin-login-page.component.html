@@ -1,0 +1,27 @@
+
+<body class="bdy">
+  <div class="row">
+    <div class="col-5 d-flex justify-content-center lg" >
+  <img [src]=login alt="img" >
+    </div>
+    <div class="col-7 c">
+        <h2 class="d-flex justify-content-center">Admin Login!</h2>
+
+        <div class="container formblock">
+          <div class="form-group">
+            <label class="label">Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="email1">
+          </div><br>
+          <div class="form-group">
+            <label class="label">Password</label>
+            <input type="password" class="form-control" name="pass" [(ngModel)]="pass1">
+          </div>
+        <br>
+          <div class="d-flex justify-content-center"><Button type="submit" class="btn btn-primary" (click)="adminlogin()">Login</Button></div><br>
+        </div>
+
+        </div>
+    </div>
+
+  </body>
+
